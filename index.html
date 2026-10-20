@@ -67,428 +67,469 @@
       max-width: 520px;
       margin: 0 auto;
       padding: 22px 17px 30px;
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101010">
+
+  <title>Achadinhos Masculinos | Ofertas Exclusivas</title>
+  <meta name="description" content="Entre no grupo de achadinhos masculinos e encontre ofertas de roupas, tênis e acessórios com preços especiais.">
+
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}
+    (window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '2335425460576320');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=2335425460576320&ev=PageView&noscript=1"
+      alt="">
+  </noscript>
+  <!-- Fim do Meta Pixel -->
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    .topbar {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 9px;
-      margin-bottom: 23px;
+    :root {
+      --bg: #101010;
+      --card: #1b1b1b;
+      --white: #ffffff;
+      --muted: #b8b8b8;
+      --green: #20d76b;
+      --green-dark: #0fa958;
+      --gold: #e5bd72;
+    }
+
+    body {
+      background: var(--bg);
       color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+
+    .top-line {
+      height: 4px;
+      background: linear-gradient(90deg, #b58a42, #f4d69a, #b58a42);
+    }
+
+    .container {
+      width: min(100% - 32px, 620px);
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 0 22px;
+    }
+
+    .brand {
       font-size: 12px;
+      letter-spacing: 4px;
+      color: var(--gold);
       font-weight: 800;
-      letter-spacing: 2px;
       text-transform: uppercase;
     }
 
-    .brand-mark {
-      display: grid;
-      place-items: center;
-      width: 30px;
-      height: 30px;
-      background: var(--accent);
-      color: var(--black);
-      font-weight: 900;
-      font-size: 16px;
-      transform: skew(-7deg);
+    .brand span {
+      color: white;
     }
 
     .hero {
-      position: relative;
-      overflow: hidden;
-      padding: 29px 21px 24px;
-      border: 1px solid var(--border);
-      border-radius: 22px;
-      background: linear-gradient(145deg, #242424, #151515 72%);
-      box-shadow: 0 22px 65px #0008;
+      text-align: center;
+      padding-bottom: 24px;
     }
 
     .tag {
       display: inline-block;
-      padding: 7px 11px;
-      border: 1px solid #c6ff4d66;
-      border-radius: 4px;
-      background: #c6ff4d10;
-      color: var(--accent);
-      font-size: 10px;
-      font-weight: 800;
-      letter-spacing: 1.3px;
-      text-transform: uppercase;
+      border: 1px solid #4b402b;
+      color: var(--gold);
+      border-radius: 30px;
+      padding: 7px 13px;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      margin-bottom: 17px;
     }
 
     h1 {
-      margin-top: 22px;
-      font-size: clamp(38px, 10vw, 53px);
-      line-height: .99;
-      font-weight: 950;
-      letter-spacing: -2.5px;
+      font-size: clamp(32px, 8vw, 49px);
+      line-height: 1.04;
+      letter-spacing: -1.8px;
       text-transform: uppercase;
+      font-weight: 900;
     }
 
     h1 span {
-      color: var(--accent);
+      color: var(--gold);
     }
 
     .subtitle {
-      margin-top: 18px;
-      color: #d0d0d0;
+      color: #c8c8c8;
       font-size: 15px;
-      line-height: 1.7;
+      max-width: 430px;
+      margin: 15px auto 0;
     }
 
-    .subtitle strong {
-      color: var(--white);
-    }
-
-    .visual {
+    .photo-wrap {
       position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      margin: 24px 0;
-      padding: 19px 16px;
-      min-height: 112px;
       overflow: hidden;
-      border-radius: 13px;
-      background:
-        linear-gradient(105deg, #c6ff4d18, transparent 72%),
-        #111;
-      border: 1px solid #ffffff12;
+      border-radius: 15px;
+      border: 1px solid #383838;
+      background: #202020;
+      margin-bottom: 22px;
     }
 
-    .visual::after {
-      content: "STYLE";
-      position: absolute;
-      right: -5px;
-      bottom: -20px;
-      color: #ffffff08;
-      font-size: 70px;
-      font-weight: 950;
-      letter-spacing: -5px;
-      pointer-events: none;
-    }
-
-    .visual-label {
-      position: relative;
-      z-index: 1;
-      max-width: 230px;
-    }
-
-    .visual-label small {
+    .photo-wrap img {
       display: block;
-      margin-bottom: 6px;
-      color: var(--accent);
-      font-size: 10px;
+      width: 100%;
+      height: auto;
+      max-height: 560px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .photo-caption {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 38px 16px 15px;
+      text-align: left;
+      background: linear-gradient(transparent, rgba(0,0,0,.88));
+      font-size: 12px;
       font-weight: 800;
       letter-spacing: 1.5px;
+      text-transform: uppercase;
     }
 
-    .visual-label strong {
-      display: block;
-      font-size: 20px;
+    .photo-caption span {
+      color: var(--gold);
+    }
+
+    .offer-card {
+      background: var(--card);
+      border: 1px solid #303030;
+      border-radius: 15px;
+      padding: 22px 17px;
+      text-align: center;
+    }
+
+    .offer-card h2 {
+      font-size: 22px;
       line-height: 1.2;
       text-transform: uppercase;
+      letter-spacing: -.4px;
     }
 
-    .visual-icon {
-      position: relative;
-      z-index: 1;
-      font-size: 42px;
-    }
-
-    .section-title {
-      margin: 23px 0 13px;
+    .offer-card > p {
+      color: var(--muted);
       font-size: 13px;
-      font-weight: 800;
-      letter-spacing: 1px;
-      text-transform: uppercase;
+      margin: 9px auto 19px;
+      max-width: 390px;
     }
 
-    .benefits {
-      display: grid;
-      gap: 10px;
-      margin-bottom: 24px;
-    }
-
-    .benefit {
-      display: flex;
-      align-items: center;
-      gap: 11px;
-      padding: 12px;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      background: #ffffff04;
-      color: #e4e4e4;
-      font-size: 13px;
-    }
-
-    .check {
-      display: grid;
-      place-items: center;
-      flex-shrink: 0;
-      width: 25px;
-      height: 25px;
-      border-radius: 6px;
-      background: #c6ff4d17;
-      color: var(--accent);
-      font-weight: 900;
-    }
-
-    .cta-area {
+    .buttons {
       display: grid;
       gap: 12px;
     }
 
-    .cta {
+    .whatsapp-button {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
+      gap: 11px;
       width: 100%;
-      min-height: 59px;
-      padding: 15px 12px;
-      border: 1px solid var(--accent);
-      border-radius: 9px;
-      background: var(--accent);
-      color: #111;
-      text-align: center;
+      min-height: 62px;
+      padding: 13px 14px;
+      border-radius: 10px;
+      background: var(--green);
+      color: #062c17;
       text-decoration: none;
-      font-size: 14px;
+      font-size: 15px;
       font-weight: 900;
       letter-spacing: .3px;
-      transition: transform .15s, filter .15s;
+      box-shadow: 0 5px 0 var(--green-dark);
+      transition: transform .15s ease, background .15s ease;
     }
 
-    .cta:hover {
-      filter: brightness(1.06);
+    .whatsapp-button:hover {
+      background: #43ec86;
       transform: translateY(-2px);
     }
 
-    .cta:active {
-      transform: scale(.98);
+    .whatsapp-button:active {
+      transform: translateY(2px);
+      box-shadow: 0 2px 0 var(--green-dark);
     }
 
-    .cta svg {
-      flex-shrink: 0;
-      width: 22px;
-      height: 22px;
+    .whatsapp-icon {
+      width: 29px;
+      height: 29px;
+      flex: 0 0 29px;
     }
 
-    .cta.secondary {
-      border-color: #ffffff28;
-      background: #ffffff08;
-      color: var(--white);
+    .button-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+      text-align: left;
     }
 
-    .cta.secondary:hover {
-      border-color: var(--accent);
+    .button-text small {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      opacity: .8;
+      margin-bottom: 3px;
     }
 
-    .cta.secondary .arrow {
-      color: var(--accent);
+    .button-text strong {
+      font-size: 15px;
     }
 
-    .timer {
-      margin-top: 21px;
-      color: var(--muted);
+    .benefits {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px 17px;
+      margin-top: 20px;
+      color: #d0d0d0;
+      font-size: 11px;
+    }
+
+    .benefits span::before {
+      content: "✓";
+      color: var(--green);
+      font-weight: 900;
+      margin-right: 5px;
+    }
+
+    .countdown {
       text-align: center;
+      margin: 20px 0 0;
+      padding: 15px 12px;
+      border: 1px solid #333;
+      border-radius: 11px;
+      background: #151515;
+      color: #d2d2d2;
       font-size: 12px;
     }
 
-    .timer strong {
-      color: var(--accent);
-      font-size: 14px;
+    .countdown strong {
+      color: var(--gold);
+      font-size: 17px;
+      font-variant-numeric: tabular-nums;
     }
 
-    .progress {
-      height: 4px;
-      margin-top: 11px;
-      overflow: hidden;
-      border-radius: 10px;
-      background: #ffffff18;
+    .countdown .timer-number {
+      display: inline-block;
+      min-width: 24px;
     }
 
-    .progress-bar {
-      width: 100%;
-      height: 100%;
-      border-radius: inherit;
-      background: var(--accent);
-      transform-origin: left;
-      animation: countdown 20s linear forwards;
-    }
-
-    @keyframes countdown {
-      to { transform: scaleX(0); }
-    }
-
-    .trust {
-      margin-top: 18px;
-      color: #858585;
+    footer {
+      padding: 25px 0 30px;
       text-align: center;
+      color: #777;
       font-size: 10px;
-      line-height: 1.7;
     }
 
-    .footer {
-      padding: 20px 5px 0;
-      color: #666;
-      text-align: center;
-      font-size: 10px;
-      letter-spacing: .5px;
+    footer p + p {
+      margin-top: 5px;
     }
 
-    @media (max-width: 360px) {
-      .hero { padding: 24px 16px 20px; }
-      h1 { font-size: 36px; }
-      .cta { font-size: 12px; }
+    @media (max-width: 380px) {
+      .container {
+        width: min(100% - 22px, 620px);
+      }
+
+      .offer-card {
+        padding: 19px 12px;
+      }
+
+      .whatsapp-button {
+        min-height: 59px;
+        gap: 8px;
+      }
+
+      .button-text strong {
+        font-size: 13px;
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      .progress-bar { animation: none; }
-      * { scroll-behavior: auto !important; }
+      *, *::before, *::after {
+        transition: none !important;
+      }
     }
   </style>
 </head>
 
 <body>
-  <main class="container">
+  <div class="top-line"></div>
 
-    <div class="topbar">
-      <div class="brand-mark">M</div>
-      MODA MASCULINA • OFERTAS
-    </div>
+  <main class="container">
+    <header>
+      <div class="brand">ACHADINHOS <span>MASCULINOS</span></div>
+    </header>
 
     <section class="hero">
-
-      <div class="tag">⚡ Grupo de promoções</div>
+      <div class="tag">ESTILO • PREÇO • ATITUDE</div>
 
       <h1>
-        Vista bem.<br>
+        Vista-se bem.<br>
         <span>Pague menos.</span>
       </h1>
 
       <p class="subtitle">
-        Seu próximo achado pode estar aqui.
-        Entre no grupo e descubra <strong>promoções de moda masculina</strong>
-        para renovar o visual sem pesar no bolso.
+        Promoções de moda masculina, tênis, camisetas e acessórios
+        selecionados para quem gosta de estilo sem gastar à toa.
       </p>
-
-      <div class="visual">
-        <div class="visual-label">
-          <small>SEU ESTILO, SUA ECONOMIA</small>
-          <strong>Boas escolhas.<br>Melhores preços.</strong>
-        </div>
-        <div class="visual-icon" aria-hidden="true">✦</div>
-      </div>
-
-      <h2 class="section-title">O que você encontra no grupo</h2>
-
-      <div class="benefits">
-        <div class="benefit">
-          <span class="check">✓</span>
-          <span>Roupas masculinas para diferentes estilos</span>
-        </div>
-        <div class="benefit">
-          <span class="check">✓</span>
-          <span>Tênis, calçados e acessórios em promoção</span>
-        </div>
-        <div class="benefit">
-          <span class="check">✓</span>
-          <span>Achadinhos para economizar nas compras</span>
-        </div>
-      </div>
-
-      <div class="cta-area">
-
-        <!-- BOTÃO 1 -->
-        <a class="cta whatsapp-button"
-           href="https://chat.whatsapp.com/JvNxxsxQUU7E0VtYLgiZO5"
-           target="_blank"
-           rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M20.52 3.48A11.85 11.85 0 0 0 12.08 0C5.5 0 .15 5.35.15 11.93c0 2.1.55 4.16 1.6 5.98L0 24l6.25-1.64a11.9 11.9 0 0 0 5.82 1.48h.01c6.58 0 11.93-5.35 11.93-11.93a11.85 11.85 0 0 0-3.49-8.43ZM12.08 21.8a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.71.97.99-3.62-.24-.37a9.84 9.84 0 0 1-1.51-5.26c0-5.46 4.44-9.9 9.9-9.9a9.84 9.84 0 0 1 7 2.9 9.84 9.84 0 0 1 2.9 7c0 5.46-4.44 9.9-9.9 9.9Z"/>
-          </svg>
-          QUERO ENTRAR NO GRUPO
-        </a>
-
-        <!-- BOTÃO 2 -->
-        <a class="cta secondary whatsapp-button"
-           href="https://chat.whatsapp.com/JvNxxsxQUU7E0VtYLgiZO5"
-           target="_blank"
-           rel="noopener noreferrer">
-          <span class="arrow">↗</span>
-          VER OFERTAS DE MODA MASCULINA
-        </a>
-
-        <!-- BOTÃO 3 -->
-        <a class="cta secondary whatsapp-button"
-           href="https://chat.whatsapp.com/JvNxxsxQUU7E0VtYLgiZO5"
-           target="_blank"
-           rel="noopener noreferrer">
-          <span class="arrow">✦</span>
-          QUERO ECONOMIZAR AGORA
-        </a>
-
-      </div>
-
-      <div class="timer">
-        Você será direcionado ao grupo em
-        <strong><span id="seconds">20</span> segundos</strong>
-        <div class="progress" aria-hidden="true">
-          <div class="progress-bar" id="progressBar"></div>
-        </div>
-      </div>
-
-      <p class="trust">
-        A entrada no grupo é feita pelo WhatsApp.
-        Confira os detalhes das ofertas antes de comprar.
-      </p>
-
     </section>
 
-    <footer class="footer">
-      MODA MASCULINA • ESTILO E ECONOMIA
-    </footer>
+    <section class="photo-wrap" aria-label="Inspiração de moda masculina">
+      <!-- Envie a foto ao GitHub com o nome moda-masculina.jpeg -->
+      <img
+        src="moda-masculina.jpeg"
+        alt="Inspiração de moda masculina com camisetas, calças, tênis e acessórios"
+        fetchpriority="high"
+      >
+      <div class="photo-caption">
+        Seu próximo achado começa aqui.
+        <span>Ofertas selecionadas.</span>
+      </div>
+    </section>
 
+    <section class="offer-card">
+      <h2>Entre para o grupo</h2>
+
+      <p>
+        Receba achadinhos e oportunidades de moda masculina.
+        Entre gratuitamente e fique de olho nas próximas ofertas!
+      </p>
+
+      <div class="buttons">
+        <a class="whatsapp-button" href="https://chat.whatsapp.com/JvNxxsxQUU7E0VtYLgiZO5"
+           data-position="1" target="_blank" rel="noopener noreferrer">
+          <svg class="whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true">
+            <path fill="currentColor" d="M16 2.7A13.1 13.1 0 0 0 4.8 22.6L3 29l6.6-1.7A13.1 13.1 0 1 0 16 2.7Zm0 23.8c-2 0-3.9-.5-5.6-1.6l-.4-.2-3.9 1 1-3.8-.3-.4a10.6 10.6 0 1 1 9.2 5Zm5.8-7.9c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.8-1.7-1.9-1.9-2.2-.2-.3 0-.5.1-.7l.5-.6.3-.5c.1-.2 0-.4 0-.6l-1-2.4c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.8s1.2 3.2 1.4 3.4c.2.2 2.4 3.7 5.8 5.1.8.3 1.4.5 1.9.6.8.3 1.5.2 2 .1.6-.1 1.9-.8 2.2-1.6.3-.8.3-1.5.2-1.6-.1-.1-.3-.2-.6-.4Z"/>
+          </svg>
+          <span class="button-text">
+            <small>ACESSO GRATUITO</small>
+            <strong>CLIQUE E ENTRE NO GRUPO</strong>
+          </span>
+        </a>
+
+        <a class="whatsapp-button" href="https://chat.whatsapp.com/JvNxxsxQUU7E0VtYLgiZO5"
+           data-position="2" target="_blank" rel="noopener noreferrer">
+          <svg class="whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true">
+            <path fill="currentColor" d="M16 2.7A13.1 13.1 0 0 0 4.8 22.6L3 29l6.6-1.7A13.1 13.1 0 1 0 16 2.7Zm0 23.8c-2 0-3.9-.5-5.6-1.6l-.4-.2-3.9 1 1-3.8-.3-.4a10.6 10.6 0 1 1 9.2 5Zm5.8-7.9c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.8-1.7-1.9-1.9-2.2-.2-.3 0-.5.1-.7l.5-.6.3-.5c.1-.2 0-.4 0-.6l-1-2.4c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.8s1.2 3.2 1.4 3.4c.2.2 2.4 3.7 5.8 5.1.8.3 1.4.5 1.9.6.8.3 1.5.2 2 .1.6-.1 1.9-.8 2.2-1.6.3-.8.3-1.5.2-1.6-.1-.1-.3-.2-.6-.4Z"/>
+          </svg>
+          <span class="button-text">
+            <small>OFERTAS DE MODA MASCULINA</small>
+            <strong>CLIQUE E ENTRE NO GRUPO</strong>
+          </span>
+        </a>
+
+        <a class="whatsapp-button" href="https://chat.whatsapp.com/JvNxxsxQUU7E0VtYLgiZO5"
+           data-position="3" target="_blank" rel="noopener noreferrer">
+          <svg class="whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true">
+            <path fill="currentColor" d="M16 2.7A13.1 13.1 0 0 0 4.8 22.6L3 29l6.6-1.7A13.1 13.1 0 1 0 16 2.7Zm0 23.8c-2 0-3.9-.5-5.6-1.6l-.4-.2-3.9 1 1-3.8-.3-.4a10.6 10.6 0 1 1 9.2 5Zm5.8-7.9c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.8-1.7-1.9-1.9-2.2-.2-.3 0-.5.1-.7l.5-.6.3-.5c.1-.2 0-.4 0-.6l-1-2.4c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.8s1.2 3.2 1.4 3.4c.2.2 2.4 3.7 5.8 5.1.8.3 1.4.5 1.9.6.8.3 1.5.2 2 .1.6-.1 1.9-.8 2.2-1.6.3-.8.3-1.5.2-1.6-.1-.1-.3-.2-.6-.4Z"/>
+          </svg>
+          <span class="button-text">
+            <small>ENTRE E ACOMPANHE</small>
+            <strong>CLIQUE E ENTRE NO GRUPO</strong>
+          </span>
+        </a>
+      </div>
+
+      <div class="benefits">
+        <span>Entrada gratuita</span>
+        <span>Achadinhos selecionados</span>
+        <span>Moda masculina</span>
+      </div>
+    </section>
+
+    <div class="countdown" aria-live="polite">
+      Você será direcionado ao grupo em
+      <strong><span class="timer-number" id="timer">20</span>s</strong>
+    </div>
+
+    <footer>
+      <p>ACHADINHOS MASCULINOS</p>
+      <p>Confira preços, tamanhos e condições diretamente com cada vendedor.</p>
+    </footer>
   </main>
 
   <script>
-    const inviteUrl =
-      'https://chat.whatsapp.com/JvNxxsxQUU7E0VtYLgiZO5';
+    const linkGrupo =
+      "https://chat.whatsapp.com/JvNxxsxQUU7E0VtYLgiZO5";
 
-    const buttons = document.querySelectorAll('.whatsapp-button');
-    const secondsLabel = document.getElementById('seconds');
+    let segundos = 20;
+    let redirecionado = false;
 
-    let seconds = 20;
-    let userClicked = false;
+    const timer = document.getElementById("timer");
 
-    buttons.forEach(function(button) {
-      button.addEventListener('click', function() {
-        userClicked = true;
+    function irParaGrupo(origem) {
+      if (redirecionado) return;
+      redirecionado = true;
 
-        if (typeof fbq === 'function') {
-          fbq('track', 'Lead');
+      // Evita enviar o mesmo evento mais de uma vez por clique.
+      if (typeof fbq === "function") {
+        fbq("track", "Lead", {
+          content_name: "Grupo de Ofertas de Moda Masculina",
+          content_category: "WhatsApp",
+          button_position: origem
+        });
+      }
+
+      window.location.href = linkGrupo;
+    }
+
+    document.querySelectorAll(".whatsapp-button").forEach((botao) => {
+      botao.addEventListener("click", function () {
+        if (redirecionado) return;
+        redirecionado = true;
+
+        if (typeof fbq === "function") {
+          fbq("track", "Lead", {
+            content_name: "Grupo de Ofertas de Moda Masculina",
+            content_category: "WhatsApp",
+            button_position: this.dataset.position
+          });
         }
       });
     });
 
-    const timer = setInterval(function() {
-      if (userClicked) {
-        clearInterval(timer);
-        return;
-      }
+    const intervalo = setInterval(() => {
+      segundos--;
+      timer.textContent = segundos;
 
-      seconds -= 1;
-      secondsLabel.textContent = seconds;
-
-      if (seconds <= 0) {
-        clearInterval(timer);
-        window.location.href = inviteUrl;
+      if (segundos <= 0) {
+        clearInterval(intervalo);
+        if (!redirecionado) {
+          redirecionado = true;
+          window.location.href = linkGrupo;
+        }
       }
     }, 1000);
   </script>
-
 </body>
 </html>
